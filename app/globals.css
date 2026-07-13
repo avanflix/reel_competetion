@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: Georgia, "Playfair Display", "Times New Roman", serif;
+  --font-marquee: Impact, "Bebas Neue", "Arial Narrow", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFFBF1;
+}
+
+::selection {
+  background: #F0821F;
+  color: #FFFBF1;
+}
+
+/* Visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #C0392B;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Festive bunting strip — repeating pennant triangles, used as a section divider */
+.bunting {
+  background-image: repeating-linear-gradient(
+    115deg,
+    #F0821F 0 14px,
+    #F7A83B 14px 28px
+  );
+  clip-path: polygon(
+    0% 0%, 100% 0%, 100% 55%,
+    97% 100%, 94% 55%,
+    91% 100%, 88% 55%,
+    85% 100%, 82% 55%,
+    79% 100%, 76% 55%,
+    73% 100%, 70% 55%,
+    67% 100%, 64% 55%,
+    61% 100%, 58% 55%,
+    55% 100%, 52% 55%,
+    49% 100%, 46% 55%,
+    43% 100%, 40% 55%,
+    37% 100%, 34% 55%,
+    31% 100%, 28% 55%,
+    25% 100%, 22% 55%,
+    19% 100%, 16% 55%,
+    13% 100%, 10% 55%,
+    7% 100%, 4% 55%,
+    1% 100%, 0% 55%
+  );
+}
+
+.dotted-rule {
+  background-image: repeating-linear-gradient(90deg, #C9962F 0 8px, transparent 8px 16px);
+  height: 3px;
+}
+
+.gold-text {
+  background: linear-gradient(180deg, #F0821F 0%, #C0392B 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.chevron::before {
+  content: "\00bb";
+  color: #E8641F;
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
