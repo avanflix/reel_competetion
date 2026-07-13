@@ -61,7 +61,7 @@ function QrPlaceholder() {
 }
 
 const inputClass =
-  "w-full rounded-lg border border-marquee-gold/40 bg-white px-3.5 py-2.5 text-sm text-marquee-ink placeholder:text-marquee-ink2/40 outline-none transition focus:border-marquee-crimson focus:ring-2 focus:ring-marquee-crimson/10";
+  "w-full rounded-lg border border-marquee-gold/40 bg-white px-3.5 py-2.5 text-sm text-marquee-ink placeholder:text-marquee-ink2/40 outline-none transition focus:border-blue-800 focus:ring-2 focus:ring-blue-800/10";
 
 interface PaymentFormProps {
   amountLabel: string;
@@ -78,7 +78,7 @@ export default function PaymentForm({ amountLabel, onPaid, onBack }: PaymentForm
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-marquee-ink2">
           Entry fee
         </p>
-        <p className="mt-1 font-marquee text-3xl text-marquee-crimson">{amountLabel}</p>
+        <p className="mt-1 font-marquee text-3xl text-blue-800">{amountLabel}</p>
         <p className="mt-2 text-xs text-marquee-ink2/80">
           Proceeds from your entry fee are made possible with the contribution
           of <span className="font-semibold text-marquee-ink">Hand NGO</span>.
@@ -97,7 +97,7 @@ export default function PaymentForm({ amountLabel, onPaid, onBack }: PaymentForm
             className={
               "flex-1 rounded-full py-2 font-semibold transition " +
               (method === opt.key
-                ? "bg-marquee-crimson text-white"
+                ? "bg-blue-800 text-white"
                 : "text-marquee-ink2 hover:text-marquee-ink")
             }
           >
@@ -207,7 +207,7 @@ function OnlinePayment({
         <button
           type="submit"
           disabled={submitting}
-          className="w-full rounded-full bg-marquee-crimson py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-marquee-marigold disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:px-10"
+          className="w-full rounded-full bg-blue-800 py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-marquee-marigold disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:px-10"
         >
           {submitting ? "Processing payment…" : "Pay & Submit Entry"}
         </button>
@@ -248,7 +248,7 @@ function ScanAndPay({
         <QrPlaceholder />
         <p className="mt-4 text-sm text-marquee-ink2">
           Scan this code with any UPI or mobile payment app and pay{" "}
-          <span className="font-semibold text-marquee-crimson">{amountLabel}</span>.
+          <span className="font-semibold text-blue-800">{amountLabel}</span>.
         </p>
       </div>
 
@@ -272,7 +272,7 @@ function ScanAndPay({
         <button
           type="submit"
           disabled={confirming}
-          className="w-full rounded-full bg-marquee-crimson py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-marquee-marigold disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:px-10"
+          className="w-full rounded-full bg-blue-800 py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-marquee-marigold disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:px-10"
         >
           {confirming ? "Confirming…" : "I've Completed My Payment"}
         </button>
@@ -291,7 +291,7 @@ function BackButton({ onClick }: { onClick: () => void }) {
     <button
       type="button"
       onClick={onClick}
-      className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-marquee-gold bg-transparent px-7 py-3 text-sm font-semibold text-marquee-ink transition-all hover:border-marquee-crimson hover:text-marquee-crimson"
+      className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-marquee-gold bg-transparent px-7 py-3 text-sm font-semibold text-marquee-ink transition-all hover:border-blue-800 hover:text-blue-800"
     >
       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none"
         viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

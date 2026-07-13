@@ -63,7 +63,7 @@ function Field({
 }
 
 const inputClass =
-  "w-full rounded-lg border border-marquee-gold/40 bg-white px-3.5 py-2.5 text-sm text-marquee-ink placeholder:text-marquee-ink2/40 outline-none transition focus:border-marquee-crimson focus:ring-2 focus:ring-marquee-crimson/10";
+  "w-full rounded-lg border border-marquee-gold/40 bg-white px-3.5 py-2.5 text-sm text-marquee-ink placeholder:text-marquee-ink2/40 outline-none transition focus:border-blue-800 focus:ring-2 focus:ring-blue-800/10";
 
 interface RegistrationFormProps {
   initialData: RegistrationData | null;
@@ -126,7 +126,7 @@ export default function RegistrationForm({
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
       <section>
-        <h3 className="font-display text-lg font-700 text-marquee-crimson">
+        <h3 className="font-display text-lg font-700 text-blue-800">
           Applicant Details
         </h3>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
@@ -157,7 +157,7 @@ export default function RegistrationForm({
       </section>
 
       <section>
-        <h3 className="font-display text-lg font-700 text-marquee-crimson">
+        <h3 className="font-display text-lg font-700 text-blue-800">
           Mailing Address
         </h3>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
@@ -190,7 +190,7 @@ export default function RegistrationForm({
       </section>
 
       <section>
-        <h3 className="font-display text-lg font-700 text-marquee-crimson">
+        <h3 className="font-display text-lg font-700 text-blue-800">
           Your Entry
         </h3>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
@@ -205,7 +205,7 @@ export default function RegistrationForm({
 
         <div className="mt-4 rounded-lg border border-marquee-gold/25 bg-marquee-sand p-4">
           <label className="flex items-center gap-2.5 text-sm text-marquee-ink">
-            <input type="checkbox" className="h-4 w-4 accent-marquee-crimson"
+            <input type="checkbox" className="h-4 w-4 accent-blue-800"
               checked={data.isMinor} onChange={(e) => update("isMinor", e.target.checked)} />
             A participant featured in this entry is under 18
           </label>
@@ -221,7 +221,7 @@ export default function RegistrationForm({
       </section>
 
       <section>
-        <h3 className="font-display text-lg font-700 text-marquee-crimson">
+        <h3 className="font-display text-lg font-700 text-blue-800">
           Submit Your Video
         </h3>
         <p className="mt-1 text-sm text-marquee-ink2">
@@ -240,7 +240,7 @@ export default function RegistrationForm({
               className={
                 "flex-1 rounded-full py-2 font-semibold transition " +
                 (data.videoType === opt.key
-                  ? "bg-marquee-crimson text-white"
+                  ? "bg-blue-800 text-white"
                   : "text-marquee-ink2 hover:text-marquee-ink")
               }
             >
@@ -261,8 +261,8 @@ export default function RegistrationForm({
           <div className="mt-4">
             <Field label="Video file" hint="MP4 or MOV, up to 150MB.">
               <input required type="file" accept="video/*" onChange={handleFile}
-                className="block w-full text-sm text-marquee-ink2 file:mr-3 file:rounded-full file:border-0 file:bg-marquee-crimson file:px-4 file:py-2 file:text-sm file:font-semibold file:text-white hover:file:bg-marquee-marigold" />
-              {fileName && <span className="mt-1.5 block text-xs text-marquee-crimson">Selected: {fileName}</span>}
+                className="block w-full text-sm text-marquee-ink2 file:mr-3 file:rounded-full file:border-0 file:bg-blue-800 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-white hover:file:bg-marquee-marigold" />
+              {fileName && <span className="mt-1.5 block text-xs text-blue-800">Selected: {fileName}</span>}
             </Field>
           </div>
         )}
@@ -278,7 +278,7 @@ export default function RegistrationForm({
         <button
           type="button"
           onClick={onBack}
-          className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-marquee-gold bg-transparent px-7 py-3 text-sm font-semibold text-marquee-ink transition-all hover:border-marquee-crimson hover:text-marquee-crimson"
+          className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-marquee-gold bg-transparent px-7 py-3 text-sm font-semibold text-marquee-ink transition-all hover:border-blue-800 hover:text-blue-800"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none"
             viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -290,7 +290,7 @@ export default function RegistrationForm({
         <button
           type="submit"
           disabled={submitting}
-          className="rounded-full bg-marquee-crimson px-10 py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-marquee-marigold disabled:cursor-not-allowed disabled:opacity-50"
+          className="rounded-full bg-blue-800 px-10 py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-marquee-marigold disabled:cursor-not-allowed disabled:opacity-50"
         >
           {submitting ? "Saving your entry…" : "Continue to Payment"}
         </button>

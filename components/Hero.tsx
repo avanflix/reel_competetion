@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="mt-8 flex flex-wrap items-center gap-6">
           <a
             href="#register"
-            className="rounded-full bg-white px-7 py-3 text-sm font-bold uppercase tracking-wide text-marquee-crimson shadow-lg transition hover:bg-marquee-cream"
+            className="rounded-full bg-white px-7 py-3 text-sm font-bold uppercase tracking-wide text-blue-800 shadow-lg transition hover:bg-sky-100"
           >
             Start Your Entry
           </a>

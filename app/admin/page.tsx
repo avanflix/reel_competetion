@@ -37,7 +37,7 @@ export default function AdminLoginPage() {
             />
           </div>
         </div>
-        <p className="text-center font-marquee text-sm uppercase tracking-[0.3em] text-marquee-crimson">
+        <p className="text-center font-marquee text-sm uppercase tracking-[0.3em] text-blue-800">
           Troy Telugu Association
         </p>
         <h1 className="mt-1 text-center font-display text-2xl font-700 text-marquee-ink">
@@ -54,7 +54,7 @@ export default function AdminLoginPage() {
             </label>
             <input
               required
-              className="w-full rounded-lg border border-marquee-gold/40 bg-white px-3.5 py-2.5 text-sm text-marquee-ink outline-none focus:border-marquee-crimson focus:ring-2 focus:ring-marquee-crimson/10"
+              className="w-full rounded-lg border border-marquee-gold/40 bg-white px-3.5 py-2.5 text-sm text-marquee-ink outline-none focus:border-blue-800 focus:ring-2 focus:ring-blue-800/10"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
@@ -66,7 +66,7 @@ export default function AdminLoginPage() {
             <input
               required
               type="password"
-              className="w-full rounded-lg border border-marquee-gold/40 bg-white px-3.5 py-2.5 text-sm text-marquee-ink outline-none focus:border-marquee-crimson focus:ring-2 focus:ring-marquee-crimson/10"
+              className="w-full rounded-lg border border-marquee-gold/40 bg-white px-3.5 py-2.5 text-sm text-marquee-ink outline-none focus:border-blue-800 focus:ring-2 focus:ring-blue-800/10"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -81,7 +81,7 @@ export default function AdminLoginPage() {
         <button
           type="submit"
           disabled={loading}
-          className="mt-6 w-full rounded-full bg-marquee-crimson py-3 text-sm font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-marquee-marigold disabled:opacity-50"
+          className="mt-6 w-full rounded-full bg-blue-800 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-marquee-marigold disabled:opacity-50"
         >
           {loading ? "Signing in…" : "Sign In"}
         </button>

@@ -73,7 +73,7 @@ export default function CompetitionFlow({ entryFeeLabel }: { entryFeeLabel: stri
 
       {step === STEP.DONE && (
         <div className="rounded-2xl border border-marquee-gold/40 bg-marquee-sand p-8 text-center shadow-[0_2px_10px_rgba(60,20,10,0.06)]">
-          <p className="font-marquee text-3xl text-marquee-crimson">That&rsquo;s a wrap!</p>
+          <p className="font-marquee text-3xl text-blue-800">That&rsquo;s a wrap!</p>
           <p className="mx-auto mt-3 max-w-md text-sm text-marquee-ink2">
             Your entry has been submitted and your payment is confirmed. A
             confirmation email is on its way to{" "}

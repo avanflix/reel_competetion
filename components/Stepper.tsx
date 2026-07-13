@@ -12,9 +12,9 @@ export default function Stepper({ current }: { current: number }) {
                 className={
                   "flex h-9 w-9 items-center justify-center rounded-full border-2 font-marquee text-base " +
                   (state === "done"
-                    ? "border-marquee-crimson bg-marquee-crimson text-white"
+                    ? "border-blue-800 bg-blue-800 text-white"
                     : state === "active"
-                    ? "border-marquee-crimson bg-white text-marquee-crimson"
+                    ? "border-blue-800 bg-white text-blue-800"
                     : "border-marquee-ink2/20 bg-white text-marquee-ink2/40")
                 }
               >
@@ -33,7 +33,7 @@ export default function Stepper({ current }: { current: number }) {
               <div
                 className={
                   "mx-2 h-px flex-1 " +
-                  (state === "done" ? "bg-marquee-crimson" : "bg-marquee-ink2/15")
+                  (state === "done" ? "bg-blue-800" : "bg-marquee-ink2/15")
                 }
               />
             )}

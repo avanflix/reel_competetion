@@ -58,7 +58,7 @@ export default function AdminDashboard() {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
-            <p className="font-marquee text-sm uppercase tracking-[0.3em] text-marquee-crimson">
+            <p className="font-marquee text-sm uppercase tracking-[0.3em] text-blue-800">
               Troy Telugu Association
             </p>
             <h1 className="font-display text-2xl font-700">Reel Submissions Dashboard</h1>
@@ -70,13 +70,13 @@ export default function AdminDashboard() {
           <div className="flex gap-3">
             <button
               onClick={exportCsv}
-              className="rounded-full bg-marquee-crimson px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-marquee-marigold"
+              className="rounded-full bg-blue-800 px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-marquee-marigold"
             >
               Export to CSV
             </button>
             <button
               onClick={logout}
-              className="rounded-full border border-marquee-gold/50 bg-white px-5 py-2.5 text-sm font-semibold text-marquee-ink2 transition hover:border-marquee-crimson hover:text-marquee-crimson"
+              className="rounded-full border border-marquee-gold/50 bg-white px-5 py-2.5 text-sm font-semibold text-marquee-ink2 transition hover:border-blue-800 hover:text-blue-800"
             >
               Sign Out
             </button>
@@ -91,7 +91,7 @@ export default function AdminDashboard() {
               className={
                 "rounded-full border px-4 py-1.5 text-xs font-semibold uppercase tracking-wide transition " +
                 (filter === f
-                  ? "border-marquee-crimson bg-marquee-crimson text-white"
+                  ? "border-blue-800 bg-blue-800 text-white"
                   : "border-marquee-gold/40 bg-white text-marquee-ink2 hover:text-marquee-ink")
               }
             >
@@ -129,7 +129,7 @@ export default function AdminDashboard() {
                   <td className="px-4 py-3">
                     <button
                       onClick={() => setActive(s)}
-                      className="text-xs font-semibold text-marquee-crimson underline underline-offset-2"
+                      className="text-xs font-semibold text-blue-800 underline underline-offset-2"
                     >
                       {s.videoType === "upload" ? "View upload" : "View link"}
                     </button>
@@ -184,7 +184,7 @@ export default function AdminDashboard() {
                   href={active.videoUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="break-all text-marquee-crimson underline"
+                  className="break-all text-blue-800 underline"
                 >
                   {active.videoUrl}
                 </a>

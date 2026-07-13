@@ -62,8 +62,8 @@ export default function RulesSection({
   return (
     <div className="space-y-8">
       {/* Single Rules Card */}
-      <div className="rounded-3xl border border-marquee-gold/30 bg-marquee-paper p-8 shadow-xl">
-        <h2 className="font-display text-3xl text-center text-marquee-crimson">
+      <div className="rounded-3xl border border-marquee-blue/30 bg-marquee-paper p-8 shadow-xl">
+        <h2 className="font-display text-3xl text-center text-blue-800">
           Rules &amp; Regulations
         </h2>
 
@@ -77,7 +77,7 @@ export default function RulesSection({
             >
               {/* Left Heading */}
               <div>
-                <h3 className="font-display text-xl text-marquee-crimson">{group.title}</h3>
+                <h3 className="font-display text-xl text-blue-800">{group.title}</h3>
               </div>
 
               {/* Right Content */}
@@ -87,7 +87,7 @@ export default function RulesSection({
                     key={index}
                     className="flex gap-3 text-sm leading-snug text-marquee-ink2"
                   >
-                    <span className="mt-1.5 h-2 w-2 rounded-full bg-marquee-marigold shrink-0" />
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-blue-500" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -104,12 +104,12 @@ export default function RulesSection({
             type="checkbox"
             checked={acknowledged}
             onChange={(e) => onAcknowledgeChange(e.target.checked)}
-            className="mt-1 h-5 w-5 accent-marquee-crimson"
+            className="mt-1 h-5 w-5 accent-blue-800"
           />
 
           <span className="text-sm text-marquee-ink">
             I acknowledge the Rules &amp; Regulations set by{" "}
-            <span className="text-marquee-crimson font-extrabold">TROY</span> Telugu
+            <span className="text-blue-800 font-extrabold">TROY</span> Telugu
             Association for the Reels Competition and confirm that my submission
             complies with all the above guidelines.
           </span>
@@ -119,7 +119,7 @@ export default function RulesSection({
           type="button"
           disabled={!acknowledged}
           onClick={onContinue}
-          className="mt-5 rounded-full bg-marquee-crimson px-8 py-3 text-sm font-bold uppercase tracking-wide text-white transition enabled:hover:bg-marquee-marigold disabled:cursor-not-allowed disabled:opacity-30"
+          className="mt-5 rounded-full bg-gradient-to-r from-blue-900 via-blue-700 to-sky-500 px-8 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-lg transition-all duration-300 enabled:hover:from-sky-500 enabled:hover:via-blue-600 enabled:hover:to-indigo-800 enabled:hover:scale-105 disabled:cursor-not-allowed disabled:opacity-30"
         >
           Continue to Entry Form
         </button>

@@ -3,7 +3,7 @@ import FilmStripDivider from "./FilmStripDivider";
 
 export default function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 shadow-[0_2px_12px_rgba(60,20,10,0.15)]">
+    <header className="sticky top-0 z-40 shadow-[0_2px_12px_rgba(0, 191, 255, 0.15)]">
       <div className="bg-curtain">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3.5">
           <div className="flex items-center gap-3">
@@ -28,7 +28,7 @@ export default function SiteHeader() {
           </div>
           <a
             href="#register"
-            className="hidden rounded-full bg-white px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-marquee-crimson shadow-md transition hover:bg-marquee-cream sm:inline-block"
+            className="hidden rounded-full bg-white px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-blue-800 shadow-md transition hover:bg-marquee-cream sm:inline-block"
           >
             Enter the Competition
           </a>

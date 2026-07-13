@@ -17,7 +17,7 @@ body {
 }
 
 ::selection {
-  background: #F0821F;
+  background: #1F6B3A;
   color: #FFFBF1;
 }
 
@@ -28,7 +28,7 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible,
 [tabindex]:focus-visible {
-  outline: 2px solid #C0392B;
+  outline: 2px solid #1B2A5C;
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -46,8 +46,8 @@ textarea:focus-visible,
 .bunting {
   background-image: repeating-linear-gradient(
     115deg,
-    #F0821F 0 14px,
-    #F7A83B 14px 28px
+    #291f6b 0 14px,
+    #3f50a3 14px 28px
   );
   clip-path: polygon(
     0% 0%, 100% 0%, 100% 55%,
@@ -72,12 +72,25 @@ textarea:focus-visible,
 }
 
 .dotted-rule {
-  background-image: repeating-linear-gradient(90deg, #C9962F 0 8px, transparent 8px 16px);
+  background-image: repeating-linear-gradient(
+    90deg,
+    #2563EB 0 8px,
+    transparent 8px 16px
+  );
   height: 3px;
 }
 
+.bg-curtain {
+  background: linear-gradient(
+    135deg,
+    #4F7DF3 20%,
+    #73B8FF 50%,
+    #4F7DF3 100%
+  );
+}
+
 .gold-text {
-  background: linear-gradient(180deg, #F0821F 0%, #C0392B 100%);
+  background: linear-gradient(180deg, #1F6B3A 0%, #1B2A5C 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -85,7 +98,7 @@ textarea:focus-visible,
 
 .chevron::before {
   content: "\00bb";
-  color: #E8641F;
+  color: #1F6B3A;
   font-weight: 700;
   margin-right: 0.4rem;
 }

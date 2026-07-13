@@ -46,7 +46,7 @@ export default function Countdown() {
           key={u.label}
           className="flex w-16 flex-col items-center rounded-xl bg-white/95 py-2 shadow-md"
         >
-          <span className="font-marquee text-2xl leading-none text-marquee-crimson tracking-wide">
+          <span className="font-marquee text-2xl leading-none text-blue-800 tracking-wide">
             {String(u.value).padStart(2, "0")}
           </span>
           <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-marquee-ink2">
