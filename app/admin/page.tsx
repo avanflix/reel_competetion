@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AdminLoginPage() {
   const router = useRouter();
@@ -21,18 +22,24 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-curtain px-6">
+    <main className="relative flex min-h-screen items-center justify-center bg-curtain px-6">
+      <Link
+        href="/"
+        className="absolute right-6 top-6 rounded-full border border-white/30 bg-white/10 px-5 py-2 text-sm font-semibold text-white backdrop-blur-md transition hover:bg-white hover:text-blue-800"
+      >
+        ← Back to Home
+      </Link>
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-sm rounded-2xl bg-white p-8 shadow-2xl"
       >
         <div className="mb-2 flex justify-center">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-marquee-sand p-1">
+          <div className="flex h-20 w-20 items-center justify-center rounded-full">
             <Image
-              src="/logo2.png"
+              src="/troy.png"
               alt="Troy Telugu Association seal"
-              width={52}
-              height={52}
+              width={66}
+              height={66}
               className="h-full w-full rounded-full object-contain"
             />
           </div>

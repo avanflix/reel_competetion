@@ -9,17 +9,17 @@ export default function SiteHeader() {
           <div className="flex items-center gap-3">
             <div>
               <Image
-                src="/logo2.png"
+                src="/troy.png"
                 alt="Troy Telugu Association, Michigan seal"
-                width={86}
-                height={86}
+                width={66}
+                height={66}
                 priority
               />
             </div>
             <div className="leading-tight">
               <p className="font-marquee text-2xl tracking-wide text-white drop-shadow-sm">
-                <span className="text-marquee-gold2 font-extrabold">TROY</span> Telugu
-                Association
+                <span className="text-marquee-gold2 ">TROY</span> TELUGU
+                ASSOCIATION
               </p>
               <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-white/85">
                 Michigan
