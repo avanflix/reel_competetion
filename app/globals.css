@@ -80,13 +80,26 @@ textarea:focus-visible,
   height: 3px;
 }
 
-.bg-curtain {
+/* .bg-curtain {
   background: linear-gradient(
     135deg,
     #4F7DF3 20%,
     #73B8FF 50%,
     #4F7DF3 100%
   );
+} */
+
+.bg-curtain {
+  background:
+    radial-gradient(circle at 15% 25%, rgba(255,255,255,0.08), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(255,215,0,0.08), transparent 40%),
+    linear-gradient(
+      115deg,
+      #4c73bc 0%,
+      #1E5FD6 25%,
+      #4F8EF7 55%,
+      #A9D2FF 100%
+    );
 }
 
 .gold-text {
